@@ -1,0 +1,16 @@
+//banner circle
+@keyframes cir90 {
+    50%{
+        transform: rotate(90deg);
+    }
+}
+@keyframes cir360 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes cir5 {
+    50%{
+        transform: rotate(10deg);
+    }
+}

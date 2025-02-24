@@ -1,0 +1,1869 @@
+
+
+//search find card//
+.find__searchcard{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    background: var(--white);
+    margin-bottom: -80px;
+    transform: translateY(-50%);
+    @include breakpoint(max-sm){
+        transform: translateY(-20%);
+        padding: 20px;
+    }
+}
+.card__find__item{
+    .cmn--btn{
+        @include breakpoint(max-xxl){
+            font-size: 14px;
+        }
+    }
+}
+//search find card//
+
+//search find cardtwo//
+.find__searchcartwo{
+    margin-bottom: -0px;
+    transform: translateY(-0%);
+    .card__find__item{
+        span{
+            @include breakpoint(max-xxl){
+                font-size: 16px;
+            }
+        }
+        .nice-select{
+            width: 100%;
+        }
+        .cmn--btn{
+            width: 100%;
+            text-align: center;
+            @include breakpoint(max-xxl){
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.banner__shapethumb2{
+    padding: 0 40px;
+    @include breakpoint(max-xxxl){
+        width: 600px;
+        img{
+            width: 100%;
+        }
+    }
+    @include breakpoint(max-xl){
+        width: 500px;
+        padding-left: 0;
+    }
+    @include breakpoint(max-xs){
+        width: 100%;
+    }
+}
+.banner__content2box{
+    @include breakpoint(max-xl){
+        h4{
+            font-size: 20px;
+        }
+        .d2{
+            font-size: 42px;
+        }
+    }
+    @include breakpoint(max-sm){
+        h4{
+            font-size: 16px !important;
+        }
+        .d2{
+            font-size: 32px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+//search find cardtwo//
+
+//How Work Section//
+.howwork__item{
+    padding: 15px;
+    border: 1px solid var(--white);
+    .thumb{
+        width: 120px;
+        height: 120px;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+   &:hover{
+    border-color: var(--mborder);
+    .thumb{
+        transform: rotate(5deg);
+    }
+    a{
+        color: var(--base);
+    }
+   }
+   //how item two 
+   .arrow1,
+   .arrow2,
+   .arrow3
+   {
+    &::before{
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        content: "";
+        width: 200px;
+        height: 120px;
+        background: url(../../assets/img/cards/an-shap1.png) no-repeat center;
+        background-size: contain;
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+
+   }
+   .arrow2{
+    &::before{
+        background: url(../../assets/img/cards/an-shale2.png) no-repeat center center;
+        background-size: contain;
+    }
+   }
+   .arrow3{
+    &::before{
+        background: url(../../assets/img/cards/an-shape3.png) no-repeat center center;
+        background-size: contain;
+        bottom: -40px;
+    }
+   }
+}
+.tershape1{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: -10px;
+        left: calc(100% + 10px);
+        width: 250px;
+        height: 200px;
+        content: "";
+        background: url(../../assets/img/work/how-shape1.png) no-repeat center;
+        background-size: contain;
+        @include breakpoint(max-xxl){
+            width: 200px;
+        }
+        @include breakpoint(max-xl){
+            width: 150px;
+        }
+        @include breakpoint(max-md){
+            display: none;
+        }
+    }
+}
+.tershape2{
+    position: relative;
+    &::before{
+        position: absolute;
+        bottom: calc(100% - 70px);
+        left: calc(100% + 10px);
+        width: 250px;
+        height: 200px;
+        content: "";
+        background: url(../../assets/img/work/show-shape2.png) no-repeat center;
+        background-size: contain;
+        @include breakpoint(max-xxl){
+            width: 200px;
+        }
+        @include breakpoint(max-xl){
+            width: 150px;
+        }
+        @include breakpoint(max-lg){
+            display: none;
+        }
+    }
+}
+.custom-120{
+    padding-top: 120px;
+    @include breakpoint(max-md){
+        padding-top: 0;
+    }
+}
+//How Work Section//
+
+//How Work two Section//
+.work__icon{
+    background: var(--white);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    width: 135px;
+    height: 135px;
+    padding: 16px;
+    i{
+        font-size: 62px;
+        padding: 20px;
+    }
+}
+.badge{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+//How Work two Section//
+
+//call action Section//
+.call__section{
+    margin: 0 150px;
+    @include breakpoint(max-xxxl){
+        margin: 0 0px;
+    }
+   &::before{
+    position: absolute;
+    content: "";
+    background: url(../../assets/img/cards/cal-bg.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    border-radius: 16px;
+   }
+   .element1{
+    position: absolute;
+    top: 35px;
+    left: 71px;
+    width: 150px;
+    animation: cir5 2s linear infinite;
+    @include breakpoint(max-md){
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+.element2{
+    position: absolute;
+    top: 44px;
+    left: 42%;
+    width: 110px;
+    animation: cir90 5s linear infinite;
+    @include breakpoint(max-md){
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+.element3{
+    position: absolute;
+    top: 40px;
+    right: 307px;
+    width: 120px;
+    animation: cir90 5s linear infinite;
+    @include breakpoint(max-md){
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+.element4{
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    width: 140px;
+    animation: cir5 2s linear infinite;
+    @include breakpoint(max-md){
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+.element5{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 100px;
+    animation: cir5 2s linear infinite;
+    @include breakpoint(max-md){
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+}
+//call action Section//
+
+//Work-card Section//
+.select__cardbox{
+    padding: 24px;
+    gap: 10px 24px;
+    border-radius: 16px;
+    .thumb{
+        background: var(--white);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    h4{
+        width: calc(100% - 120px);
+    }
+    &:hover{
+        .thumb{
+            transform: rotateX(-360deg);
+        }
+    }
+    @include breakpoint(max-xxl){
+        padding: 22px 14px;
+        gap: 10px 14px;
+        .thumb{
+            width: 60px;
+            height: 60px;
+            img{
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+        h4{
+            width: calc(100% - 60px);
+            font-size: 20px;
+        }
+    }
+    @include breakpoint(max-md){
+        padding: 16px 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        .thumb{
+            width: 60px;
+            height: 60px;
+            img{
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+        h4{
+            width: calc(100%);
+        }
+    }
+}
+//Work-card Section//
+
+//Choose us Section//
+.choose__listwrap{
+    border-bottom: 1px dashed var(--borderdot);
+    padding-bottom: 40px;
+    li{
+        gap: 24px;
+        i{
+            width: 72px;
+            height: 72px;
+            padding: 16px;
+        }
+        .contentbox{
+            width: calc(100% - 80px);
+        }
+    }
+}
+.marketplace__user{
+    @include breakpoint(max-xs){
+        gap: 18px;
+    }
+    .icon{
+        width: 60px;
+        height: 60px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+    .janas__item{
+        border-right: 1px solid var(--border);
+        padding-right: 24px;
+        margin-right: 24px;
+    }
+}
+.choose__mthumb{
+    padding: 40px
+}
+.mapthumb{
+    position: absolute;
+    left: -40%;
+    top: 0;
+    z-index: -1;
+    @include breakpoint(max-lg){
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}
+//Choose us Section//
+
+//Choose two Section//
+.task__listwrap{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed var(--borderdot);
+    li{
+        width: calc(100% / 2);
+        padding: 5px 0;
+        @include breakpoint(max-xl){
+            span{
+                font-size: 16px;
+            }
+        }
+        @include breakpoint(max-xs){
+            width: 100%;
+        }
+    }
+}
+.choose__thumb2{
+    padding-right: 40px;
+    @include breakpoint(max-lg){
+        padding-right: 0;
+        padding: 30px 40px;
+    }
+}
+//Choose two Section//
+
+//Top Rated Section//
+//pagination dots
+.top__ratedwrapper{
+	.owl-dots{
+		.owl-dot{
+			span{
+				background: var(--border);
+                width: 8px;
+                height: 8px;
+			}
+            &.active{
+                span{
+                    width: 28px;
+                   background: linear-gradient(90deg, #1A4DBE 0%, #AE5EBE 100%);
+               }
+            }
+		}
+	}
+}
+
+//pagination dots
+.top__items{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px 40px;
+    background: var(--white);
+    transition: all 0.4s;
+    .icon{
+        transition: all 0.3s;
+        width: 100px;
+        height: 100px; 
+        i{
+            font-size: 48px;
+        }
+    }
+    .arrow{
+        width: 48px;
+        height: 48px;
+        i{
+            color: var(--base);
+            font-size: 24px;
+        }
+    }
+    &:hover{
+        background: linear-gradient(101.84deg, #452FF4 1.08%, #b241e2c5 98.75%);
+        .icon{
+            transform: rotateX(360deg);
+            i{
+                color: var(--base);
+            }
+        }
+        .content{
+            h4{
+               a{
+                color: var(--white);
+               }
+            }
+            h3{
+                a{
+                    color: var(--white);
+                }
+            }
+            p{
+                color: var(--white);
+            }
+            .arrow{
+                background: var(--white);
+            }
+            .outline__btn{
+                span{
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    h3{
+        @include breakpoint(max-lg){
+            font-size: 22px;
+        }
+    }
+    @include breakpoint(max-xxxl){
+        padding: 30px 25px;
+    }
+    @include breakpoint(max-xxxl){
+        padding: 25px 15px;
+    }
+}
+.suctom__space{
+    margin: 30px 20px;
+    @include breakpoint(max-xxxl){
+        margin: 25px 10px;
+    }
+}
+//Top Rated Section//
+
+//Top Categories Section//
+.top__categorieswrap{
+    .top__items{
+        gap: 32px;
+        border-bottom: 1px solid var(--border);
+        padding: 0;
+        box-shadow: none;
+        padding: 40px 0;
+        border-radius: 5px;
+        &:hover{
+            padding: 35px 10px 35px;
+            background: var(--base2);
+        }
+        @include breakpoint(max-xl){
+            gap: 20px;
+        }
+        @include breakpoint(max-lg){
+            padding: 20px 0;
+        }
+        @include breakpoint(max-xs){
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .icon{
+        min-width: 100px;
+    }
+    .arrow{
+        min-width: 48px;
+        justify-content: center;
+    }
+}
+//Top Categories Section//
+
+//Top Card new Section//
+.top__cardnew__wrap{
+    .top__items{
+        padding: 0 0;
+        box-shadow: none;
+        &:hover{
+            padding: 10px 15px;
+            box-shadow: inherit;
+        }
+        p{
+            font-size: 14px;
+        }
+        .cmn--btn{
+            &::before{
+                background: var(--white);
+            }
+            span{
+                color: var(--base) !important;
+            }
+        }
+    }
+}
+.top__reviwthumb{
+    width: 750px;
+    img{
+        width: 100%;
+    }
+    @include breakpoint(max-xl){
+        width: 600px;
+    }
+    @include breakpoint(max-lg){
+        display: none;
+    }
+}
+//Top Card new Section//
+
+//community Section//
+.community__contetn{
+    .thumb__map{
+        position: absolute;
+        top: -80px;
+        left: 0;
+    }
+}
+//community Section//
+
+//provide Section//
+.provide__section{
+    .ball{
+        position: absolute;
+        top: 70px;
+        right: 70px;
+        width: 170px;
+        height: 170px;
+        animation: cir360 8s linear infinite;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.provide__listwrap{
+    padding-bottom: 0;
+    border-bottom: unset;
+    gap: 10px 24px;
+    @include breakpoint(max-xl){
+        gap: 10px 14px;
+    }
+    @include breakpoint(max-lg){
+        gap: 10px 24px;
+    }
+    @include breakpoint(max-sm){
+        flex-wrap: wrap;
+    }
+}
+.provide__thumb{
+    @include breakpoint(max-lg){
+        padding: 10px 30px;
+    }
+}
+//provide Section//
+
+//counter Section//
+.counter__wrap{
+    background: var(--white);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+}
+.counter__items{
+    .counter__content{
+        gap: 32px;
+        @include breakpoint(max-md){
+            gap: 24px;
+        }
+        .iconbox{
+            width: 100px;
+            height: 100px;
+            i{
+                font-size: 56px;
+            }
+        }
+        .content{
+            .odometer{
+                font-size: 56px;
+                font-weight: 600;
+                @include inter;
+                line-height: 120%;
+                @include breakpoint(max-lg){
+                    font-size: 48px;
+                }
+            }
+            .added{
+                font-size: 56px;
+                font-weight: 600;
+                @include inter;
+                line-height: 120%;
+                @include breakpoint(max-lg){
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
+//counter Section//
+
+//Card rated Section//
+.card__rated{
+    &::before{
+        position: absolute;
+        content: "";
+        inset: 0;
+        width: 100%;
+        height: 62%;
+        background: linear-gradient(90deg, #1A4DBE 0%, #AE5EBE 100%);
+        opacity: 0.1;
+        z-index: -1;
+    }
+}
+//Card rated Section//
+
+//App Section//
+.app__listwrap{
+    position: relative;
+    &::before{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        height: 100%;
+        border-width: 1px;
+        border: 1px dashed #7A98D9;
+        content: "";
+        z-index: -1;
+    }
+    li{
+        &:not(:last-child){
+            margin-bottom: 24px;
+            @include breakpoint(max-sm){
+                margin-bottom: 14px;
+            }
+        }
+        a{
+            gap: 12px;
+            i{
+                background: var(--base);
+                width: 24px;
+                height: 24px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.app__store{
+    a{
+        border: 1px solid var(--base);
+        border-radius: 100px;
+        padding: 10px;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+}
+.shape__ball{
+    position: absolute;
+    top: 88px;
+    left: 88px;
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+    img{
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+}
+.app__thumb{
+    @include breakpoint(max-lg){
+        max-width: 400px;
+        margin: 0 auto 15px;
+        img{
+            width: 100%;
+        }
+    }
+}
+//App Section//
+
+//faq Section//
+.accordion__wrap{
+    .accordion-item{
+        border: none;
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+        .accordion-header{
+            .accordion-button{
+                background: transparent;
+                border-radius: 5px;
+                box-shadow: none;
+                font-size: 18px;
+                line-height: 150%;
+                font-weight: 500;
+                color: var(--title);
+                background: linear-gradient(90deg, rgba(26, 77, 190, 0.05) 0%, rgba(174, 94, 190, 0.05) 100%);
+                @include inter;
+                @include breakpoint(max-xs){
+                    font-size: 1rem;
+                }
+                &::after{
+                    background: url(../../assets/img/faq/plus.png) no-repeat center center;
+                    background-size: 1.5vh;
+                    background-color: #b113d0;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: none;
+                transform: none;
+                background: url(../../assets/img/faq/remove.png) no-repeat center center;
+                background-size: 1vh;
+                background-color: var(--danger);
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+            .accordion-button:not(.collapsed) {
+                color: var(--title);
+                background: var(--white);
+                box-shadow: none;
+                border: 1px solid var(--border);
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-bottom: 1px dashed var(--border);
+            }
+        }
+    }
+    .accordion-body{
+        border: 1px solid var(--border);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top: unset;
+        p{
+            font-size: 14px;
+            color: var(--pragraph);
+            line-height: 150%;
+            @include inter;
+
+        }
+    }
+}
+//faq Section//
+
+//Popular Card Section//
+.popular__tabs{
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        border-bottom: unset;
+        @include breakpoint(max-md){
+            gap: 14px;
+        }
+        .nav-link{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            border-radius: 100px;
+            border: 1px solid var(--base);
+            .icon{
+                margin-bottom: -6px;
+                i{
+                    font-size: 26px;
+                    color: var(--base);
+                }
+            }
+            span{
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--base);
+                @include inter;
+            }
+            &.active{
+                background: linear-gradient(90deg, #1A4DBE 0%, #AE5EBE 100%);
+                .icon{
+                    i{
+                        color: var(--white);
+                    }
+                }
+                span{
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+.popular__items{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    padding: 8px;
+    .content{
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 24px 10px;
+        .cmn--btn{
+            width: 190px;
+            margin: 0 auto;
+            justify-content: center;
+            .icon{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+//Popular Card Section//
+
+//Popular CardTwo Section//
+.popular__v2{
+    display: flex;
+    align-items: center;
+    padding: 32px 32px;
+    @include breakpoint(max-lg){
+        padding: 30px 20px;
+    }
+    @include breakpoint(max-md){
+        flex-wrap: wrap;
+    }
+    @include breakpoint(max-xxs){
+        h3{
+            font-size: 22px;
+        }
+        .cmn--btn{
+            padding: 7px 15px;
+            font-size: 14px;
+        }
+    }
+
+}
+.card__boxleft{
+    border-right: 1px dashed var(--border);
+    padding-right: 40px;
+    margin-right: 40px;
+    @include breakpoint(max-lg){
+        padding-right: 18px;
+        margin-right: 18px;
+    }
+    @include breakpoint(max-md){
+        margin-right: 0;
+        padding-right: 0;
+        border-right: unset;
+        border-bottom: 1px dashed var(--border);
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .aplication{
+        padding-left: 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 4px;
+            left: 0;
+            top: 10px;
+            background: var(--base);
+            border-radius: 50%;
+        }
+        @include breakpoint(max-md){
+            text-align: left;
+        }
+    }
+}
+.compare__btn{
+    gap: 8px;
+    i{
+        background: rgba(26, 77, 190, 0.05);
+        width: 36px;
+        height: 36px; 
+    }
+}
+.ctband__item{
+    background: rgba(26, 77, 190, 0.05);
+    border-radius: 32px;
+    padding: 8px 16px;
+}
+.bank__detals{
+    margin-bottom: 32px;
+    .bankd__wrap{
+        width: calc(100% - 50%);
+        li{
+            &:not(:last-child){
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+.left__border{
+    border-left: 1px dashed var(--border);
+    padding-left: 24px;
+    margin-left: 24px;
+    @include breakpoint(max-xxs){
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+}
+.card__boxright{
+    .card__info{
+        background: rgba(26, 77, 190, 0.05);
+        border-radius: 16px;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--pragraph2);
+        @include inter;
+    }
+    .card__btngrp{
+        border-bottom: 1px dashed var(--border);
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        gap: 16px;
+        @include breakpoint(max-lg){
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}
+//Popular CardTwo Section//
+.popular__v3{
+    padding: 28px;
+    .card__boxleft{
+        margin-right: 0;
+        padding-right: 0;
+        border-right: unset;
+        @include breakpoint(max-md){
+            border-bottom: unset;
+            padding-bottom: 0;
+            margin: 0;
+        }
+    }
+    .cmn--btn{
+        width: 170px;
+        justify-content: center;
+    }
+    .bank__detals{
+        margin-bottom: 0;
+    }
+    @include breakpoint(max-md){
+        padding: 18px;
+        .inner__cardv3{
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+    }
+}
+.inner__cardv3{
+    gap: 40px;
+}
+.hightlight__list{
+    li{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        i{
+           font-size: 18px;
+        }
+        &:not(:last-child){
+            margin-bottom: 8px;
+        }
+    }
+}
+//extra riview//
+.expert__review{
+    .progress{
+        background: var(--barbg);
+        width: 100%;
+        height: 12px;
+    }
+}
+.progras__item{
+    .arp-title{
+        width: 160px;
+    }
+    @include breakpoint(max-xs){
+        flex-wrap: wrap;
+    }
+}
+//fees items//
+.fees__items{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    padding: 28px;
+    @include breakpoint(max-md){
+        padding: 18px;
+    }
+}
+//fees items//
+
+//we counting Section//
+.we__counting{
+    .counter__content{
+        .iconbox{
+            width: 84px;
+            height: 84px;
+            i{
+                font-size: 46px;
+            }
+        }
+        .content{
+            .odometer,
+            .added{
+                font-size: 40px;
+            }
+        }
+    }
+}
+//we counting Section//
+
+//testimonail Section//
+.testimonial__slider{
+	.owl-nav{
+        margin-top: 30px;
+        justify-content: flex-start;
+        display: flex;
+		.owl-prev{
+			&:hover{
+				background: transparent;
+			}
+		}
+		.owl-next{
+			&:hover{
+				background: transparent;
+			}
+		}
+	}
+}
+.testimonial__items{
+    padding: 24px 24px;
+    border: 1px solid var(--border);
+    &::before{
+        border-radius: 16px;
+    }
+}
+//testimonail Section//
+
+//testimonail two Section//
+.testimonial__sectiontwo{
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        background: url(../../assets/img/testimonial/top-cardbg.jpg) no-repeat top center;
+        background-size: cover;
+        content: "";
+    }
+
+}
+.testimonial__wraptwo{
+    .testimonial__items{
+        background: var(--white);
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
+        border: unset;
+        margin-bottom: 25px;
+        .quote{
+            width: 84px;
+            height: 84px;
+            background: rgba(26, 77, 190, 0.05);
+            i{
+                font-size: 48px;
+            }
+        }
+    }
+}
+//testimonail two Section//
+
+//sort Section//
+.select__sort{
+    .nice-select{
+        width: 180px;
+    }
+}
+//sort Section//
+
+//card details Section//
+.card__common__item{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    padding: 24px 24px;
+    form{
+        background: rgba(26, 77, 190, 0.05);
+        border-radius: 100px;
+        padding: 12px 15px;
+        input{
+            width: 100%;
+            border: unset;
+            outline: none;
+            background: transparent;
+            color: var(--title);
+        }
+        i{
+            color: var(--title);
+        }
+    }
+    .social{
+        li{
+            a{
+                width: 36px;
+                height: 36px;
+                border: unset;
+                background: rgba(26, 77, 190, 0.05); 
+                i{
+                    color: var(--base);
+                }
+                &:hover{
+                    background: linear-gradient(101.84deg, #452FF4 1.08%, #b241e2c5 98.75%);
+                    i{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+.social2{
+    li{
+        a{
+            width: 36px;
+            height: 36px;
+            border: unset;
+            background: rgba(26, 77, 190, 0.05); 
+            i{
+                color: var(--base);
+            }
+            &:hover{
+                background: linear-gradient(101.84deg, #452FF4 1.08%, #b241e2c5 98.75%);
+                i{
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+.card__categories{
+    li{
+        a{
+            transition: all 0.4s;
+            border-radius: 100px;
+            gap: 12px;
+            padding: 12px 20px;
+            background: rgba(26, 77, 190, 0.05);
+            i{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: var(--white);
+                font-size: 18px;
+            }
+            span{
+                @include breakpoint(max-xl){
+                    font-size: 16px;
+                }
+            }
+            &:hover{
+                background: linear-gradient(101.84deg, #452FF4 1.08%, #b241e2c5 98.75%);
+                span{
+                    color: var(--white);
+                }
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 12px;
+        }
+    }
+}
+//balance transfer card
+.balance__transferbody{
+    padding: 20px;
+    @include breakpoint(max-sm){
+        padding: 15px 10px;
+    }
+}
+.balance__boxes{
+    gap: 20px;
+    .left__content{
+        .balance__list{
+            li{
+                position: relative;
+                padding-left: 8px;
+                &::before{
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: var(--base);
+                }
+                &:not(:last-child){
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    @include breakpoint(max-xxl){
+        flex-wrap: wrap;
+        .right__card{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+//card details Section//
+
+//quantity box Section//
+.purchase__quantity{
+    .quantity__box{
+        background: rgba(26, 77, 190, 0.05);
+        border-radius: 24px;
+        padding: 5px;
+        width: 150px;
+        justify-content: space-around;
+        button{
+           background: var(--base); 
+           min-width: 40px;
+           min-height: 40px;
+           border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            border: unset;
+            outline: none;
+        }
+        input{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            width: 35px;
+            @include inter;
+            color: var(--title);
+            border: unset;
+            outline: none;
+            background: transparent;
+        }
+    }
+}
+.iboxes{
+    background: rgba(26, 77, 190, 0.05);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    padding: 5px;
+}
+//quantity box Section//
+
+//Card faq Section//
+.balance__cardfaq{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+}
+//Card faq Section//
+
+//Cart listing Section//
+.account__categories{
+    gap: 17px;
+    .account-cateitem{
+        gap: 8px;
+        .form-check-input{
+            margin-top: 0;
+            outline: none;
+            box-shadow: none;
+        }
+        .form-check-input:checked[type=radio] {
+            background-image: none;
+            background: url(../../assets/img/details/dot-check.png) no-repeat center center;
+            background-size: .90vh;
+        }
+        .form-check-input:checked {
+            background-color: var(--white);
+            border-color: var(--base);
+        }
+        label{
+            width: calc(100% - 22px);
+        }
+    }
+}
+.bank__checkitem{
+    gap: 10px;
+    .form-check-input{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: none;
+    }
+     .form-check-input:checked {
+        background-color: #2c51c0;
+        border-color: var(--border);
+    }
+    
+    .form-check-input:checked[type=checkbox] {
+        background-image: none;
+        background: url(../../assets/img/details/check.png) no-repeat center center;
+        background-size: 0.25;
+    }
+}
+//Cart listing Section//
+
+//range slider  Section//
+.range__barcustom{
+    //pricing range scale
+    .price-input {
+        display: flex;
+        gap: 1px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .price-input .field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 23%;
+    }
+    .field input {
+        width: 50%;
+        height: 100%;
+        outline: none;
+        -moz-appearance: textfield;
+        background: transparent;
+        border: unset;
+        font-size: 16px;
+        font-weight: 400;
+        @include inter;
+        color: var(--text);
+        span{
+            font-size: 16px;
+            font-weight: 400;
+            @include inter;
+            color: var(--text);
+        }
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .price-input .separator {
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--title);
+    }
+    .slider {
+        height: 5px;
+        position: relative;
+        background: #CECECE;
+        border-radius: 5px;
+    }
+    .slider .progress {
+        height: 100%;
+        left: 25%;
+        right: 25%;
+        position: absolute;
+        border-radius: 5px;
+        background: #1c0bd7;
+    }
+    .range-input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .range-input input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -5px;
+        background: none;
+        pointer-events: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        height: 17px;
+        width: 7px;
+        border-radius: 5px;
+        background: var(--white);
+        border: 1px solid var(--base);
+        pointer-events: auto;
+        -webkit-appearance: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    }
+    //pricing range scale
+}
+//range slider Section//
+
+//gift details Section//
+.gift__detailsleft{
+    gap: 40px;
+    .card__boxright{
+        width: calc(100% - 300px);
+    }
+    @include breakpoint(max-xl){
+        flex-wrap: wrap;
+        gap: 20px;
+        .card__boxright{
+            width: 100%;
+        }
+    }
+}
+.bankd__wrapv2{
+    @include breakpoint(max-sm){
+        flex-wrap: wrap;
+        gap: 10px;
+        .left__border{
+            padding-left: 0;
+            margin-left: 0;
+            border-left: unset;
+        }
+        .bankd__wrap{
+            width: 100%;
+        }
+    }
+}
+.gift__card__item{
+    position: relative;
+   .thumb{
+    .shop__icon{
+        width: 40px;
+        height: 40px;
+        background: var(--white);
+        border-radius: 50%;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        i{
+            color: var(--base);
+            font-size: 22px;
+        }
+    }
+   } 
+}
+//gift details Section//
+
+//gift card details Section//
+.google__play__wrapper{
+    padding: 28px;
+    background: var(--white);
+    .google__items{
+        background: rgba(26, 77, 190, 0.05);
+        gap: 24px;
+        border: 1px dashed var(--borderdot);
+        padding: 20px 28px;
+        &:hover{
+            background: linear-gradient(101.84deg, #452FF4 1.08%, #b241e2c5 98.75%);
+            span{
+                color: var(--white);
+            }
+        }
+    }
+    @include breakpoint(max-xxs){
+        padding: 14px;
+        .google__items{
+            gap: 14px;
+            padding: 15px 12px;
+        }
+    }
+}
+//gift card details Section//
+
+//Cart Section//
+.cart__wrapper{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    padding: 40px;
+    .table__responsive{
+       @include breakpoint(max-md){
+           overflow-x: scroll;
+           margin-bottom: 15px;
+        }
+    }
+    table{
+        @include breakpoint(max-md){
+            width: 500px;
+        }
+        border-color: var(--border);
+        thead{
+            tr{
+                th{
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        tr{
+            td{
+                
+            }
+        }
+    }
+    .table>:not(:last-child)>:last-child>* {
+        border-bottom: 1px solid var(--border);
+    }
+    .quantity__box{
+        background: rgba(26, 77, 190, 0.03);
+        padding: 2px 4px;
+        text-align: center;
+        width: 80px;
+        border-radius: 16px;
+        input{
+            border-radius: 16px;
+            border: unset;
+            outline: none;
+            background: transparent;
+            width: 35px;
+            color: var(--title);
+            text-align: center;
+        }
+        .rotates{
+            transform: rotate(180deg);
+        }
+        button{
+            border: unset;
+            padding: 0;
+            height: 24px;
+            outline: none;
+            background: transparent;
+        }
+    }
+    @include breakpoint(max-md){
+        padding: 10px 10px;
+    }
+}
+.promot__coded{
+    form{
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        padding: 8px;
+        input{
+            width: 100%;
+            font-size: 18px;
+            font-weight: 500;
+            @include inter;
+            color: var(--pragraph);
+            padding: 8px 10px;
+            border: unset;
+        }
+        button{
+            border: none;
+            outline: none;
+            min-width: 144px;
+            @include breakpoint(max-sm){
+                min-width: 120px;
+                padding: 7px 10px 11px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.max-240{
+    max-width: 240px;
+}
+.cart__totalwrap{
+    background: rgba(26, 77, 190, 0.03);
+    border: 1px solid var(--tableborder);
+    padding: 30px 30px;
+    max-width: 640px;
+    margin-left: auto;
+    .subtotal__list{
+        li{
+            span{
+                width: 50%;
+            }
+            .tbg{
+                padding: 16px 20px;
+                background: rgba(26, 77, 190, 0.04); 
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    }
+}
+//Cart Section//
+
+//checkout Section//
+.billiong__addressbox{
+    padding: 32px 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    .write__review{
+        padding: 0 0;
+    }
+    @include breakpoint(max-xl){
+        padding: 25px 20px;
+    }
+}
+.payment__methods{
+    padding: 32px 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    .write__review{
+        padding: 0 0;
+    }
+    @include breakpoint(max-xl){
+        padding: 25px 20px;
+    }
+}
+//checkout Section//
+
+//checkout leftbar Section//
+.promo__box{
+    background: var(--white);
+    padding: 24px;
+}
+.ordersummary{
+    padding: 24px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    .ordelist{
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
+}
+//checkout leftbar Section//
+
+//successful Section//
+.successful__wrapper{
+    .icon{
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        text-align: center;
+        background: var(--base);
+        margin: 0 auto 40px;
+        i{
+            font-size: 64px;
+        }
+    }
+    .d4{
+        @include breakpoint(max-md){
+            font-size: 29px;
+        }
+    }
+}
+.successful__print{
+    gap: 32px;
+}
+//successful Section//
+
+//help-support Section//
+.support__section{
+    position: relative;
+    &::before{
+        width: 100%;
+        height: 65%;
+    }
+}
+.search__content{
+    form{
+        background: rgba(26, 77, 190, 0.03);
+        input{
+            background: transparent;
+        }
+    }
+}
+.support__helpitem{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
+    padding: 32px 32px;
+    .icon{
+        background: rgba(26, 77, 190, 0.05);
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 32px;
+        text-align: center;
+        i{
+            font-size: 44px;
+            color: var(--base);
+        }
+    }
+    .outline__btn{
+        i{
+            transition: all 0.4s;
+        }
+        &:hover{
+            span{
+                i{
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+//help-support Section//
+
+//contact Section//
+.contact__section{
+    position: relative;
+    &::before{
+        width: 100%;
+        height: 45%;
+        bottom: 0;
+        content: "";
+        background: linear-gradient(90deg, #1A4DBE 0%, #AE5EBE 100%);
+        opacity: 0.05;
+        position: absolute;
+        z-index: -1;
+    }
+}
+.contact__wrapper{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
+    padding: 32px 32px;
+    form{
+        background: transparent;
+        padding: 0 0;
+        .frm__grp{
+            button{
+                border: unset;
+            }
+        }
+    }
+    @include breakpoint(max-lg){
+        padding: 25px 20px;
+    }
+}
+//contact Section//
+
+//need helpemail Section//
+.help__emailitem{
+    background: rgba(26, 77, 190, 0.03);
+    padding: 32px 32px;
+    border: 1px solid var(--border);
+    .icon{
+        width: 100px;
+        height: 100px;
+        border: 1px solid var(--border);
+        margin: 0 auto 32px;
+        i{
+            font-size: 40px;
+            color: var(--base);
+        }
+
+    }
+}
+//need helpemail Section//
+
+//signin signup Section//
+.signup__boxes{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+    background: var(--white);
+    padding: 32px 32px;
+    @include breakpoint(max-xl){
+        padding: 25px 18px;
+    }
+    form{
+        padding: 0 0;
+        background: transparent;
+        border-radius: 0;
+        button{
+            border: unset;
+        }
+    }
+}
+.signup__thumb{
+    @include breakpoint(max-lg){
+        margin-top: 30px;
+    }
+}
+//signin signup Section//
+
+//error Section//
+.error__content{
+    max-width: 636px;
+    margin: 0 auto;
+}
+//error Section//
+
+//faq Section//
+.faq__thumb{
+    margin-bottom: -40px;
+}
+//faq Section//
+
