@@ -196,8 +196,11 @@
         text-align: center;
         justify-content: center;
     }
-    @include breakpoint(max-xs){
-        padding: 15px 14px 14px;
+    @include breakpoint(max-lg){
+        padding: 8px 10px 18px;
+        p{
+            margin-bottom: 24px;
+        }
     }
     h3{
         @include breakpoint(max-xs){
@@ -221,6 +224,15 @@
                 height: 4px;
                 border-radius: 50%;
                 background: var(--pragraph2);
+            }
+        }
+    }
+    @include breakpoint(max-lg){
+        gap: 8px 14px;
+        li{
+            font-size: 14px;
+            i{
+                font-size: 18px;
             }
         }
     }

@@ -47,6 +47,10 @@
 			color: var(--white);
 		}
 	}
+	@include breakpoint(max-xxs){
+		padding: 7px 18px 8px;
+		font-size: 14px;
+	}
 }
 /*--Button Area End--*/
 /*--Button Area End--*/

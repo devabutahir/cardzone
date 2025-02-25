@@ -129,7 +129,6 @@
             display: none;
         }
     }
-
    }
    .arrow2{
     &::before{
@@ -143,6 +142,15 @@
         background-size: contain;
         bottom: -40px;
     }
+   }
+   @include breakpoint(max-lg){
+        .work__icon {
+            width: 80px;
+            height: 80px;
+            i{
+                font-size: 32px;
+            }
+        }
    }
 }
 .tershape1{
@@ -375,6 +383,16 @@
             width: calc(100% - 80px);
         }
     }
+    @include breakpoint(max-lg){
+        li{
+            gap: 14px;
+            align-items: flex-start !important;
+            i{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
 }
 .marketplace__user{
     @include breakpoint(max-xs){
@@ -522,6 +540,16 @@
             font-size: 22px;
         }
     }
+    @include breakpoint(max-lg){
+        .icon{
+            width: 70px;
+            min-width: 70px !important;
+            height: 70px;
+            i{
+                font-size: 36px;
+            }
+        }
+    }
     @include breakpoint(max-xxxl){
         padding: 30px 25px;
     }
@@ -664,9 +692,6 @@
 .counter__items{
     .counter__content{
         gap: 32px;
-        @include breakpoint(max-md){
-            gap: 24px;
-        }
         .iconbox{
             width: 100px;
             height: 100px;
@@ -691,6 +716,26 @@
                 line-height: 120%;
                 @include breakpoint(max-lg){
                     font-size: 48px;
+                }
+            }
+        }
+        @include breakpoint(max-lg){
+            gap: 20px;
+            .iconbox{
+                width: 71px;
+                height: 71px;
+                i{
+                    font-size: 36px;
+                }
+            }
+            .content{
+                .odometer{
+                    font-size: 36px;
+                    font-weight: 600;
+                }
+                .added{
+                    font-size: 36px;
+                    font-weight: 600;
                 }
             }
         }
@@ -1072,6 +1117,9 @@
         background: var(--barbg);
         width: 100%;
         height: 12px;
+    }
+    .progras__item {
+        gap: 3px !important; 
     }
 }
 .progras__item{

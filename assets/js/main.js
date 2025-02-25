@@ -205,7 +205,7 @@ $(document).ready(function () {
 	//menu top fixed bar
 	var fixed_top = $(".header-section");
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 220) {
+		if ($(this).scrollTop() > 0) {
 			fixed_top.addClass("menu-fixed animated fadeInDown");
 			fixed_top.removeClass("slideInUp");
 			$("body").addClass("body-padding");
@@ -278,9 +278,7 @@ $(document).ready(function () {
 	var input = document.querySelector('#qty');
 	var btnminus = document.querySelector('.qtyminus');
 	var btnplus = document.querySelector('.qtyplus');
-
-	if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
-		
+	if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {		
 		var min = Number(input.getAttribute('min'));
 		var max = Number(input.getAttribute('max'));
 		var step = Number(input.getAttribute('step'));
@@ -325,11 +323,9 @@ $(document).ready(function () {
 	var openButton = document.getElementById('searchBtn');
 	var popup = document.getElementById('searchPopup');
 	var closeButton = document.getElementById('closeButton');
-
 	openButton.addEventListener('click', function() {
 	popup.classList.add('open');
 	});
-
 	closeButton.addEventListener('click', function() {
 	popup.classList.add('close');
 	setTimeout(function() {
