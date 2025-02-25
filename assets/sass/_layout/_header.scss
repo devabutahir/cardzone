@@ -146,7 +146,7 @@
 	.menu__components{
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		gap: 18px;
 		i{
 			color: var(--title);
 		}
@@ -161,11 +161,22 @@
 				border-radius: 50%;
 				background: var(--white);
 				box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+				transition: all 0.4s;
 				@include breakpoint(max-xs){
 					width: 30px;
 					height: 30px;
 					i{
 						font-size: 18px;
+					}
+				}
+				i{
+					transition: all 0.4s;
+					font-size: 22px;
+				}
+				&:hover{
+					background: var(--base2);
+					i{
+						color: var(--white);
 					}
 				}
 			}
@@ -375,6 +386,17 @@
 	border-radius: 50%;
 	background: var(--white);
 	box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+	transition: all 0.4s;
+	i{
+		transition: all 0.4s;
+		font-size: 22px;
+	}
+	&:hover{
+		background: var(--base2);
+		i{
+			color: var(--white);
+		}
+	}
 	@include breakpoint(max-xs){
 		width: 30px;
 		height: 30px;

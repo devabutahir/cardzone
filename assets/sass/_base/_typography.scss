@@ -638,13 +638,13 @@ p {
 
 //social meta
 .social{
-	gap: 12px;
+	gap: 8px;
 	li{
 		a{
 			width: 36px;
 			height: 36px;
 			display: block;
-			border-radius: 50%;
+			border-radius: 4px;
 			border: 1px solid var(--base);
 			display: flex;
 			align-items: center;

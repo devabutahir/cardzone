@@ -858,13 +858,13 @@ p {
 }
 
 .social {
-  gap: 12px;
+  gap: 8px;
 }
 .social li a {
   width: 36px;
   height: 36px;
   display: block;
-  border-radius: 50%;
+  border-radius: 4px;
   border: 1px solid var(--base);
   display: flex;
   align-items: center;
@@ -1482,7 +1482,7 @@ p {
 .header-wrapper .menu__components {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
 }
 .header-wrapper .menu__components i {
   color: var(--title);
@@ -1497,6 +1497,7 @@ p {
   border-radius: 50%;
   background: var(--white);
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s;
 }
 @media (max-width: 500px) {
   .header-wrapper .menu__components .tolly__shop a {
@@ -1506,6 +1507,16 @@ p {
   .header-wrapper .menu__components .tolly__shop a i {
     font-size: 18px;
   }
+}
+.header-wrapper .menu__components .tolly__shop a i {
+  transition: all 0.4s;
+  font-size: 22px;
+}
+.header-wrapper .menu__components .tolly__shop a:hover {
+  background: var(--base2);
+}
+.header-wrapper .menu__components .tolly__shop a:hover i {
+  color: var(--white);
 }
 @media (max-width: 500px) {
   .header-wrapper .menu__components {
@@ -1681,6 +1692,17 @@ p {
   border-radius: 50%;
   background: var(--white);
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s;
+}
+#searchBtn i {
+  transition: all 0.4s;
+  font-size: 22px;
+}
+#searchBtn:hover {
+  background: var(--base2);
+}
+#searchBtn:hover i {
+  color: var(--white);
 }
 @media (max-width: 500px) {
   #searchBtn {
@@ -4324,7 +4346,7 @@ p {
 }
 
 .quick__link li:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 .quick__link li a:hover {
   color: var(--base) !important;
@@ -4340,6 +4362,7 @@ p {
 }
 .footer__contact li a i {
   transition: all 0.4s;
+  border-radius: 4px;
 }
 .footer__contact li a:hover i {
   background: var(--base);
@@ -4357,7 +4380,7 @@ p {
   justify-content: space-between;
   border-radius: 7px;
   border: 1px solid var(--base);
-  padding: 4px;
+  padding: 2px 5px;
 }
 .footer__item form input {
   outline: none;
@@ -4382,7 +4405,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px 13px 6px 15px;
+  padding: 9px 13px 6px 15px;
   border-radius: 4px;
 }
 .footer__item form .cmn--btn i {
