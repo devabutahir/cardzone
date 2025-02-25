@@ -649,9 +649,14 @@ p {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: all 0.4s;
 			i{
 				color: var(--white);
-				font-size: 16px;
+				font-size: 15px;
+				transition: all 0.4s;
+			}
+			&:hover{
+				background: var(--base);
 			}
 		}
 	}

@@ -869,10 +869,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s;
 }
 .social li a i {
   color: var(--white);
-  font-size: 16px;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+.social li a:hover {
+  background: var(--base);
 }
 
 .cmn__icon {
@@ -1856,6 +1861,10 @@ p {
   }
 }
 
+.banner__shapethumb2 .thumb {
+  animation: lefta 2s linear infinite;
+}
+
 .wallet {
   position: absolute;
   top: 40px;
@@ -2573,12 +2582,17 @@ p {
 
 .choose__thumb2 {
   padding-right: 40px;
+  animation: lefta 2s linear infinite;
 }
 @media (max-width: 991px) {
   .choose__thumb2 {
     padding-right: 0;
     padding: 30px 40px;
   }
+}
+
+.call__card {
+  animation: updown 2s linear infinite;
 }
 
 .top__ratedwrapper .owl-dots .owl-dot span {
@@ -2719,6 +2733,7 @@ p {
 
 .top__reviwthumb {
   width: 750px;
+  animation: lefta 2s linear infinite;
 }
 .top__reviwthumb img {
   width: 100%;
@@ -2774,6 +2789,9 @@ p {
   }
 }
 
+.provide__thumb {
+  animation: updown 2s linear infinite;
+}
 @media (max-width: 991px) {
   .provide__thumb {
     padding: 10px 30px;
@@ -2890,6 +2908,9 @@ p {
   height: 100%;
 }
 
+.app__thumb {
+  animation: updown 2s linear infinite;
+}
 @media (max-width: 991px) {
   .app__thumb {
     max-width: 400px;
@@ -3608,6 +3629,16 @@ p {
 .gift__card__item {
   position: relative;
 }
+.gift__card__item .thumb {
+  transition: all 0.4s;
+  overflow: hidden;
+  display: block;
+  border-radius: 12px;
+}
+.gift__card__item .thumb img {
+  transition: all 0.4s;
+  overflow: hidden;
+}
 .gift__card__item .thumb .shop__icon {
   width: 40px;
   height: 40px;
@@ -3620,6 +3651,9 @@ p {
 .gift__card__item .thumb .shop__icon i {
   color: var(--base);
   font-size: 22px;
+}
+.gift__card__item:hover .thumb img {
+  transform: scale(1.1);
 }
 
 .google__play__wrapper {
@@ -4039,6 +4073,19 @@ p {
   outline: none;
 }
 
+.balance__transfercard .bt__one {
+  overflow: hidden;
+  transition: all 0.4s;
+  border-radius: 16px;
+}
+.balance__transfercard .bt__one img {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.balance__transfercard:hover .bt__one img {
+  transform: scale(1.1);
+}
+
 .related__card {
   padding: 24px;
   background: var(--white);
@@ -4216,6 +4263,9 @@ p {
 .quick__link li:not(:last-child) {
   margin-bottom: 7px;
 }
+.quick__link li a:hover {
+  color: var(--base) !important;
+}
 
 .footer__contact li:not(:last-child) {
   margin-bottom: 16px;
@@ -4223,6 +4273,13 @@ p {
 .footer__contact li a span {
   width: calc(100% - 40px);
   display: block;
+  transition: all 0.4s;
+}
+.footer__contact li a i {
+  transition: all 0.4s;
+}
+.footer__contact li a:hover i {
+  background: var(--base);
 }
 
 @media (max-width: 1399px) {
@@ -4235,9 +4292,9 @@ p {
 }
 .footer__item form {
   justify-content: space-between;
-  border-radius: 100px;
+  border-radius: 7px;
   border: 1px solid var(--base);
-  padding: 8px;
+  padding: 4px;
 }
 .footer__item form input {
   outline: none;
@@ -4262,10 +4319,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 7px 13px 6px 15px;
+  border-radius: 4px;
 }
 .footer__item form .cmn--btn i {
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .footer__bottom {
@@ -4283,6 +4343,9 @@ p {
 .footer__bottom p {
   text-align: center;
 }
+.footer__bottom p a:hover {
+  color: var(--base2);
+}
 @media (max-width: 450px) {
   .footer__bottom {
     padding: 25px 0;
@@ -4291,6 +4354,9 @@ p {
 
 .help__support {
   gap: 24px;
+}
+.help__support li a:hover {
+  color: var(--base2) !important;
 }
 @media (max-width: 450px) {
   .help__support {

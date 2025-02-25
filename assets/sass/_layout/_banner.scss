@@ -118,6 +118,11 @@
         }
     }
 }
+.banner__shapethumb2 {
+    .thumb{
+        animation: lefta 2s linear infinite;
+    }
+}
 //wallet 
 .wallet{
     position: absolute;

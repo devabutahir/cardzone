@@ -432,10 +432,14 @@
 }
 .choose__thumb2{
     padding-right: 40px;
+    animation: lefta 2s linear infinite;
     @include breakpoint(max-lg){
         padding-right: 0;
         padding: 30px 40px;
     }
+}
+.call__card{
+    animation: updown 2s linear infinite;
 }
 //Choose two Section//
 
@@ -592,6 +596,7 @@
 }
 .top__reviwthumb{
     width: 750px;
+    animation: lefta 2s linear infinite;
     img{
         width: 100%;
     }
@@ -644,6 +649,7 @@
     }
 }
 .provide__thumb{
+    animation: updown 2s linear infinite;
     @include breakpoint(max-lg){
         padding: 10px 30px;
     }
@@ -763,6 +769,7 @@
     }
 }
 .app__thumb{
+    animation: updown 2s linear infinite;
     @include breakpoint(max-lg){
         max-width: 400px;
         margin: 0 auto 15px;
@@ -1517,20 +1524,35 @@
 .gift__card__item{
     position: relative;
    .thumb{
-    .shop__icon{
-        width: 40px;
-        height: 40px;
-        background: var(--white);
-        border-radius: 50%;
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        i{
-            color: var(--base);
-            font-size: 22px;
+        transition: all 0.4s;
+        overflow: hidden;
+        display: block;
+        border-radius: 12px;
+        img{
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+        .shop__icon{
+            width: 40px;
+            height: 40px;
+            background: var(--white);
+            border-radius: 50%;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            i{
+                color: var(--base);
+                font-size: 22px;
+            }
+        }
+   } 
+   &:hover{
+    .thumb{
+        img{
+            transform: scale(1.1);
         }
     }
-   } 
+   }
 }
 //gift details Section//
 

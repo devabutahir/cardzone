@@ -79,6 +79,24 @@
         }
     }
 }
+.balance__transfercard{
+    .bt__one{
+        overflow: hidden;
+        transition: all 0.4s;
+        border-radius: 16px;
+        img{
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+    }
+    &:hover{
+        .bt__one{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 //related card section
 .related__card{
     padding: 24px;

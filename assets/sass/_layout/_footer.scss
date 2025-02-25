@@ -8,6 +8,11 @@
         &:not(:last-child){
             margin-bottom: 7px;
         }
+        a{
+            &:hover{
+                color: var(--base) !important;
+            }
+        }
     }
 }
 .footer__contact{
@@ -19,6 +24,15 @@
             span{
                 width: calc(100% - 40px);
                 display: block;
+                transition: all 0.4s;
+            }
+            i{
+                transition: all 0.4s;
+            }
+            &:hover{
+               i{
+                background: var(--base);
+               } 
             }
         }
     }
@@ -34,9 +48,9 @@
     }
     form{
         justify-content: space-between;
-        border-radius: 100px;
+        border-radius: 7px;
         border: 1px solid var(--base);
-        padding: 8px;
+        padding: 4px;
         input{
             outline: none;
             height: 52px;
@@ -57,9 +71,12 @@
             display: flex;  
             align-items: center;
             justify-content: center;
+            padding: 7px 13px 6px 15px;
+            border-radius: 4px;
             i{
                 margin: 0;
                 padding: 0;
+                font-size: 18px;
             }
         }
     }
@@ -76,6 +93,11 @@
     }
     p{
         text-align: center;
+        a{
+            &:hover{
+                color: var(--base2);
+            }
+        }
     }
     @include breakpoint(max-xxsmall){
         padding: 25px 0;
@@ -83,6 +105,13 @@
 }
 .help__support{
     gap: 24px;
+    li{
+        a{
+            &:hover{
+                color: var(--base2) !important;
+            }
+        }
+    }
     @include breakpoint(max-xxsmall){
         flex-wrap: wrap;
         gap: 2px 20px;
